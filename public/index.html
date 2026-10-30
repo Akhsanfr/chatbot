@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini AI Assistant - Ocean Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ocean-blob blob-1"></div>
+  <div class="ocean-blob blob-2"></div>
+
+  <div class="chat-container">
+    <!-- Header -->
+    <header class="chat-header">
+      <div class="header-content">
+        <div class="avatar-container">
+          <div class="avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a8 8 0 0 0-8 8c0 3.32 2.03 6.16 4.93 7.37L8 22l4.5-2.25L17 22l-.93-4.63A8.003 8.003 0 0 0 20 10a8 8 0 0 0-8-8z"/>
+              <circle cx="9" cy="9" r="1.5" fill="currentColor"/>
+              <circle cx="15" cy="9" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="status-dot"></span>
+        </div>
+        <div class="header-text">
+          <h2>Asisten AI</h2>
+          <span class="status-label">Online • Blue Ocean Edition</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chat Message Container -->
+    <main id="chat-box" class="chat-box" aria-live="polite"></main>
+
+    <!-- Chat Input Form -->
+    <footer class="chat-footer">
+      <form id="chat-form">
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            id="user-input" 
+            placeholder="Tulis pesan Anda..." 
+            autocomplete="off" 
+            required 
+          />
+          <button type="submit" id="send-button" aria-label="Kirim Pesan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
